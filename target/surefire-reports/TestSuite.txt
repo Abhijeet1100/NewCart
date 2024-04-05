@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.333 s <<< FAILURE! - in TestSuite
+submitOrder(Pom.Project)  Time elapsed: 15.831 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='cart'] //div //h3[text()='adidas original']"}
+  (Session info: chrome=123.0.6312.107)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f00ba2318f14a7e1dec05d388efe07ec, findElement {using=xpath, value=//div[@class='cart'] //div //h3[text()='adidas original']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: /var/folders/lb/kpn_7q3x4zd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61519/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f00ba2318f14a7e1dec05d388efe07ec
+	at Pom.Project.submitOrder(Project.java:88)
+

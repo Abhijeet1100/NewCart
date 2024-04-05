@@ -9,18 +9,41 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Project</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">37,250</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">ErrorValidation</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3,020</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">40,270</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Project</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">18,411</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">ErrorValidation</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3,682</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">22,093</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Project &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Pom.Project</td><td><a href="#m0">validateOrderHistoryPage</a></td><td rowspan="1">1697661869080</td><td rowspan="1">10132</td></tr><tr><th colspan="4">Project &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Pom.Project</td><td><a href="#m1">submitOrder</a></td><td rowspan="1">1697661845296</td><td rowspan="1">20866</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">ErrorValidation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Pom.ErrorValidation</td><td><a href="#m2">submitOrder</a></td><td rowspan="1">1697661881397</td><td rowspan="1">855</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Project &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Pom.Project</td><td><a href="#m0">submitOrder</a></td><td rowspan="1">1712319901298</td><td rowspan="1">15784</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">ErrorValidation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Pom.ErrorValidation</td><td><a href="#m1">submitOrder</a></td><td rowspan="1">1712319919959</td><td rowspan="1">859</td></tr></tbody>
 </table>
-<h2>Project</h2><h3 id="m0">Pom.Project#validateOrderHistoryPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [null] but found [adidas original]
-	at Pom.Project.validateOrderHistoryPage(Project.java:153)
+<h2>Project</h2><h3 id="m0">Pom.Project#submitOrder</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;cart&apos;] //div //h3[text()=&apos;adidas original&apos;]&quot;}
+  (Session info: chrome=123.0.6312.107)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.4&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7326d64346bc6a1e95e259759b83db5f, findElement {using=xpath, value=//div[@class=&apos;cart&apos;] //div //h3[text()=&apos;adidas original&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: /var/folders/lb/kpn_7q3x4zd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61406/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7326d64346bc6a1e95e259759b83db5f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+	at Pom.CartPage.productCheckout(CartPage.java:41)
+	at Pom.CartPage.goTOCart(CartPage.java:36)
+	at Pom.Project.submitOrder(Project.java:88)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Pom.Project#submitOrder</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>ErrorValidation</h2><h3 id="m2">Pom.ErrorValidation#submitOrder</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ErrorValidation</h2><h3 id="m1">Pom.ErrorValidation#submitOrder</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

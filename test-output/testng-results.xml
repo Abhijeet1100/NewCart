@@ -1,42 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-19T02:14:02 IST" name="Suite" finished-at="2023-10-19T02:14:42 IST" duration-ms="40298">
+  <suite started-at="2024-04-05T17:54:58 IST" name="Suite" finished-at="2024-04-05T17:55:20 IST" duration-ms="22138">
     <groups>
     </groups>
-    <test started-at="2023-10-19T02:14:02 IST" name="Project" finished-at="2023-10-19T02:14:39 IST" duration-ms="37250">
+    <test started-at="2024-04-05T17:54:58 IST" name="Project" finished-at="2024-04-05T17:55:17 IST" duration-ms="18411">
       <class name="Pom.Project">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Pom.Project@1622f1b]" started-at="2023-10-19T02:14:02 IST" name="launchApplication" finished-at="2023-10-19T02:14:05 IST" duration-ms="3185" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Pom.Project@470f1802]" started-at="2024-04-05T17:54:58 IST" name="launchApplication" finished-at="2024-04-05T17:55:01 IST" duration-ms="2496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder()[pri:0, instance:Pom.Project@1622f1b]" started-at="2023-10-19T02:14:05 IST" name="submitOrder" finished-at="2023-10-19T02:14:26 IST" duration-ms="20866" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Pom.Project@1622f1b]" started-at="2023-10-19T02:14:26 IST" name="tearDown" finished-at="2023-10-19T02:14:26 IST" duration-ms="142" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Pom.Project@1622f1b]" started-at="2023-10-19T02:14:26 IST" name="launchApplication" finished-at="2023-10-19T02:14:29 IST" duration-ms="2774" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="validateOrderHistoryPage()[pri:0, instance:Pom.Project@1622f1b]" started-at="2023-10-19T02:14:29 IST" name="validateOrderHistoryPage" finished-at="2023-10-19T02:14:39 IST" depends-on-methods="Pom.Project.submitOrder" duration-ms="10132" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="submitOrder()[pri:0, instance:Pom.Project@470f1802]" started-at="2024-04-05T17:55:01 IST" name="submitOrder" finished-at="2024-04-05T17:55:17 IST" duration-ms="15784" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [null] but found [adidas original]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='cart'] //div //h3[text()='adidas original']"}
+  (Session info: chrome=123.0.6312.107)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7326d64346bc6a1e95e259759b83db5f, findElement {using=xpath, value=//div[@class='cart'] //div //h3[text()='adidas original']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: /var/folders/lb/kpn_7q3x4zd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61406/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7326d64346bc6a1e95e259759b83db5f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [null] but found [adidas original]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at Pom.Project.validateOrderHistoryPage(Project.java:153)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='cart'] //div //h3[text()='adidas original']"}
+  (Session info: chrome=123.0.6312.107)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7326d64346bc6a1e95e259759b83db5f, findElement {using=xpath, value=//div[@class='cart'] //div //h3[text()='adidas original']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: /var/folders/lb/kpn_7q3x4zd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61406/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7326d64346bc6a1e95e259759b83db5f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+at Pom.CartPage.productCheckout(CartPage.java:41)
+at Pom.CartPage.goTOCart(CartPage.java:36)
+at Pom.Project.submitOrder(Project.java:88)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -65,27 +82,27 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateOrderHistoryPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Pom.Project@1622f1b]" started-at="2023-10-19T02:14:39 IST" name="tearDown" finished-at="2023-10-19T02:14:39 IST" duration-ms="114" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Pom.Project@470f1802]" started-at="2024-04-05T17:55:17 IST" name="tearDown" finished-at="2024-04-05T17:55:17 IST" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Pom.Project -->
     </test> <!-- Project -->
-    <test started-at="2023-10-19T02:14:39 IST" name="ErrorValidation" finished-at="2023-10-19T02:14:42 IST" duration-ms="3020">
+    <test started-at="2024-04-05T17:55:17 IST" name="ErrorValidation" finished-at="2024-04-05T17:55:20 IST" duration-ms="3682">
       <class name="Pom.ErrorValidation">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Pom.ErrorValidation@6c80d78a]" started-at="2023-10-19T02:14:39 IST" name="launchApplication" finished-at="2023-10-19T02:14:41 IST" duration-ms="2040" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Pom.ErrorValidation@6e171cd7]" started-at="2024-04-05T17:55:17 IST" name="launchApplication" finished-at="2024-04-05T17:55:19 IST" duration-ms="2723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder()[pri:0, instance:Pom.ErrorValidation@6c80d78a]" started-at="2023-10-19T02:14:41 IST" name="submitOrder" finished-at="2023-10-19T02:14:42 IST" duration-ms="855" status="PASS">
+        <test-method signature="submitOrder()[pri:0, instance:Pom.ErrorValidation@6e171cd7]" started-at="2024-04-05T17:55:19 IST" name="submitOrder" finished-at="2024-04-05T17:55:20 IST" duration-ms="859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Pom.ErrorValidation@6c80d78a]" started-at="2023-10-19T02:14:42 IST" name="tearDown" finished-at="2023-10-19T02:14:42 IST" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Pom.ErrorValidation@6e171cd7]" started-at="2024-04-05T17:55:20 IST" name="tearDown" finished-at="2024-04-05T17:55:20 IST" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

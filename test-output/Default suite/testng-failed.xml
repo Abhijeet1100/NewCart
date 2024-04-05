@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Pom.ErrorValidation">
+      <class name="Pom.Project">
         <methods>
           <include name="submitOrder"/>
           <include name="launchApplication"/>
-          <include name="teatDown"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Pom.ErrorValidation -->
+      </class> <!-- Pom.Project -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

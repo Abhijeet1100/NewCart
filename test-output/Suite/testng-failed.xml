@@ -6,7 +6,6 @@
       <class name="Pom.Project">
         <methods>
           <include name="submitOrder"/>
-          <include name="validateOrderHistoryPage"/>
           <include name="launchApplication"/>
           <include name="tearDown"/>
         </methods>
